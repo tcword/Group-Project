@@ -9,8 +9,10 @@ import {
 } from "react-router-dom";
 import "./index.css";
 import Home from "./Home";
-import Order from "./Order"
-import About from './About';
+import Order from "./Order";
+import Team from './Team';
+import Story from './Story';
+import Location from './Location'
 import State from "./State";
 import navScroll from "./navScroll";
 import * as serviceWorker from "./serviceWorker";
@@ -20,7 +22,9 @@ ReactDOM.render(
     <Switch>
       <Route exact path="/" component={Home} />
       <Route exact path="/order" component={Order} />
-      <Route exact path="/about" component={About} />
+      <Route exact path="/team" component={Team} />
+      <Route exact path="/story" component={Story}/>
+      <Route exact path="/location" component={Location}/>
       {/* <State/> */}
     </Switch>
   </Router>,

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import "./App.css";
-import logo3 from './logo3.png';
+import logo3 from "./images/logo3.png";
 
 function Order(){
     return (
@@ -25,13 +25,18 @@ function Order(){
                     </Link>
                   </li>
                   <li>
-                    <Link to="/about">About Us</Link>
+                    <Link to="/team">Meet the Team</Link>
                   </li>
                   <li>
                     <a href="#footer">Contact</a>
                   </li>
                   <li>
-                    <a href="#footer">Catering</a>
+                    <a href="/location">Location</a>
+                  </li>
+                  <li>
+                    <a className="orderNow" href="/order">
+                      Order Now
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -72,7 +77,7 @@ function Order(){
             <div class="about-content"></div>
           </div>
         </section>
-        
+
         <footer id="footer">
           <div class="container">
             <div class="row">

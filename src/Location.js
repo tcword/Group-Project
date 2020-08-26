@@ -1,18 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./App.css";
-import logo from "./logo.png";
+import logo3 from "./images/logo3.png";
 
-function About() {
+function Location() {
   return (
     <div>
-      <header className="about_header">
+      <header>
         <div className="container">
           <div className="row">
             <div className="brand-name">
-              <a href="#home" className="logo">
-                <img src={logo} />
-              </a>
+              <Link to="/" className="logo">
+                <img src={logo3} />
+              </Link>
             </div>
             <div className="ham-burger">
               <i className="fa fa-bars"></i>
@@ -20,53 +20,52 @@ function About() {
             <div className="navbar">
               <ul>
                 <li>
-                  <a href="#home" class="active">
+                  <Link to="/" class="active">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#about">About Us</a>
+                  <Link to="/team">Meet the Team</Link>
                 </li>
                 <li>
                   <a href="#footer">Contact</a>
                 </li>
                 <li>
-                  <a href="#footer">Catering</a>
+                  <a href="/location">Location</a>
+                </li>
+                <li>
+                  <a className="orderNow" href="/order">
+                    Order Now
+                  </a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </header>
-      {/* <div className='about_home'>
+      <div className="location" id="location">
         <div className="container">
           <div className="row full-screen">
             <div className="home-content">
               <div className="block">
+                <h1>Locate Us</h1>
               </div>
             </div>
           </div>
         </div>
-      </div> */}
-      <section class="about-me" id="about">
+      </div>
+      <section class="locations" id="about">
         <div class="container">
           <div class="row">
             <div class="section-title">
-              <h1>Mario's Pledge</h1>
+              <h1>Locate</h1>
               {/* <p class="small text-uppercase">Our Pledge</p> */}
             </div>
-            <h4 class="pledge">
-              Here at Mario's, we use fresh, never frozen ingredients from local
-              farmers that will be sure to satisfy your taste buds. Our pledge
-              to you is to satisfy your hunger needs with the best pizza in the
-              nation. Voted #1 in the great state of Texas for 5 straight years
-              for best pizza, we value customer satisfaction and promise to
-              provide the best pizza eating experince of your life.{" "}
-            </h4>
           </div>
           <div class="about-content"></div>
         </div>
       </section>
+
       <footer id="footer">
         <div class="container">
           <div class="row">
@@ -94,4 +93,4 @@ function About() {
   );
 }
 
-export default About;
+export default Location;
