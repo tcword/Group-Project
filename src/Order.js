@@ -1,57 +1,12 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import Footer from "./Footer";
 import "./App.css";
-import logo3 from "./images/logo3.png";
+import Navbar from "./Navbar";
 
 function Order(){
     return (
       <div>
-        <header>
-          <div className="container">
-            <div className="row">
-              <div className="brand-name">
-                <Link to="/" className="logo">
-                  <img src={logo3} />
-                </Link>
-              </div>
-              <div className="ham-burger">
-                <i className="fa fa-bars"></i>
-              </div>
-              <div className="navbar">
-                <ul>
-                  <li>
-                    <Link to="/" class="active">
-                      Home
-                    </Link>
-                  </li>
-                  <li>
-                    <div class="dropdown">
-                      About Us
-                      <i class="fa fa-caret-down"></i>
-                      <div class="dropdown-content">
-                        <Link to="/team" className="dropTeam">
-                          Meet the Team
-                        </Link>
-                        <Link to="/story">Our Story</Link>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <a href="#footer">Contact</a>
-                  </li>
-                  <li>
-                    <Link to="/location">Location</Link>
-                  </li>
-                  <li>
-                    <a className="orderNow" href="/order">
-                      Order Now
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </header>
+        <Navbar />
         <div className="home2" id="home">
           <div className="container">
             <div className="row full-screen">
@@ -86,30 +41,7 @@ function Order(){
             <div class="about-content"></div>
           </div>
         </section>
-
-        <footer id="footer">
-          <div class="container">
-            <div class="row">
-              <div class="logo">Mario's Pizza</div>
-              <div class="info">
-                <p>Location: 2100 E NASA Pkwy, Seabrook, TX 77586</p>
-                <p>Open: Monday-Saturday (11:00am-10:00pm)</p>
-                <p>Contact: (888)777-4444</p>
-              </div>
-              <div class="social">
-                <a href="/" target="_blank">
-                  <i class="fa fa-facebook"></i>
-                </a>
-                <a href="/" target="_blank">
-                  <i class="fa fa-instagram"></i>
-                </a>
-                <a href="/" target="_blank">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </footer>
+        <Footer />
       </div>
     ); 
 }
