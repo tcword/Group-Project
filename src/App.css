@@ -69,7 +69,8 @@ header {
   position: absolute;
   left: 0px;
   right: 0px;
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
+   box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.5);
   padding: 0px 15px;
   z-index: 11;
 }
@@ -94,8 +95,8 @@ header.fixed {
 }
 
 .ham-burger .fa {
-  font-size: 20px;
-  height: 27px;
+  font-size: 30px;
+  height: 30px;
   width: 35px;
   background-color: #ffffff;
   color: #000000;
@@ -104,6 +105,7 @@ header.fixed {
   text-align: center;
   cursor: pointer;
   display: none;
+  margin-bottom: 50px;
 }
 
 header .row {
@@ -188,7 +190,6 @@ header .navbar ul li .orderNow:hover {
   color: black;
   transition: all 0.3s ease;
 }
-
 
 .container {
   max-width: 1140px;
@@ -304,7 +305,7 @@ header .navbar ul li .orderNow:hover {
 .about-me {
   height: 30em;
   padding: 80px 15px;
-  background:url("https://blog.hdwallsource.com/wp-content/uploads/2014/10/white-wallpaper-16876-17429-hd-wallpapers.jpg");
+  background: url("https://blog.hdwallsource.com/wp-content/uploads/2014/10/white-wallpaper-16876-17429-hd-wallpapers.jpg");
 }
 
 .text-uppercase {
@@ -320,9 +321,9 @@ header .navbar ul li .orderNow:hover {
 }
 
 .about-me .about-content {
- color: red;
- text-align: center;
- font-size: 100px;
+  color: red;
+  text-align: center;
+  font-size: 100px;
 }
 
 .about-me .about-content .img {
@@ -554,8 +555,6 @@ footer .social a:hover {
   background-color: gray;
 }
 
-
-
 /* Order Page */
 
 .home2 {
@@ -635,7 +634,7 @@ footer .social a:hover {
 }
 
 .about-me2 {
-  padding: 100px 15px;
+  padding: 100px 45px;
   background-color: #ffffff;
 }
 
@@ -678,6 +677,7 @@ footer .social a:hover {
 .about-me2 .about-content .img {
   flex: 0 0 33.33%;
   max-width: 33.33%;
+  height: 24em;
 }
 
 .about-me2 .about-content .img img {
@@ -705,16 +705,7 @@ footer .social a:hover {
 
 .about-me3 {
   background-color: lightgray;
-  height: 35em;
-  margin-bottom: 30px;
-}
-
-.about-me3 .section-title2 p.small {
-  display: block;
-  font-size: 14px;
-  color: #838383;
-  font-weight: 400;
-  letter-spacing: 2px;
+  height: 40em;
 }
 
 .about-me3 .about-content .img {
@@ -743,12 +734,12 @@ footer .social a:hover {
   margin: 0 0 12px;
   text-align: left;
   padding-left: 20px;
+  padding-top: 35px;
 }
 
 .about-me4 {
   background-color: white;
-  height: 35em;
-  margin-bottom: 30px;
+  height: 40em;
 }
 
 .about-me4 .section-title2 p.small {
@@ -789,8 +780,7 @@ footer .social a:hover {
 
 .about-me5 {
   background-color: lightgray;
-  height: 35em;
-  margin-bottom: 30px;
+  height: 40em;
 }
 
 .about-me5 .section-title2 p.small {
@@ -833,7 +823,7 @@ footer .social a:hover {
 
 .story {
   min-height: 100vh;
-  background-image: url('https://preservetucson.org/wp-content/uploads/2018/01/THPF-Web-Art-Gallery-Marios-Pizza-Sign-01.jpg');
+  background-image: url("https://preservetucson.org/wp-content/uploads/2018/01/THPF-Web-Art-Gallery-Marios-Pizza-Sign-01.jpg");
   background-size: cover;
   background-position: center;
   padding-top: 15px;
@@ -880,7 +870,6 @@ footer .social a:hover {
 .about-me2 .about-content .imgBuilding {
   flex: 0 0 33.33%;
   max-width: 33.33%;
-  
 }
 
 .about-me2 .about-content .imgBuilding img {
@@ -931,18 +920,144 @@ footer .social a:hover {
   padding-top: 30px;
 }
 
-.locations{
-  height: 30em;
-  padding: 80px 15px;
+.locations {
+  height: 60em;
+  padding: 80px 5px;
   background-color: white;
+  margin-right: 35em;
 }
 
 .locations .section-title {
   text-align: left;
+  padding-left: 9.6em;
 }
 
 .locations .about-content {
- text-align: center;
- font-size: 100px;
+  padding-left: 20%;
+}
+
+/* Responsive  */
+
+@media (max-width: 991px) {
+  .home .home-content .block h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .home .home-content .block h1 {
+    font-size: 40px;
+  }
+  .home .home-content .block h3 {
+    font-size: 25px;
+  }
+  header {
+    padding: 20px;
+    position: fixed;
+    background-color: #ffffff;
+    border: none;
+    border-bottom: 1px solid #eeeeee;
+  }
+
+  .ham-burger .fa {
+    display: inline-block;
+    padding-right: 25px;
+    padding-top: 9px;
+  }
+
+  .brand-name .logo {
+    display: none;
+  }
+
+  .navbar {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    left: 0px;
+    top: 60px;
+    padding: 15px;
+    border-top: 1px solid #eeeeee;
+    display: none;
+    border-bottom: 1px solid #eeeeee;
+  }
+  .navbar.show {
+    display: block;
+  }
+  header .navbar ul li {
+    display: block;
+    margin-left: 0;
+  }
+  header .navbar ul li a {
+    line-height: 42px;
+    color: #000000;
+  }
+  header .navbar ul li a::before {
+    background-color: #febd01;
+  }
+  header .navbar a:not(:first-child),
+  .dropdown {
+    display: none;
+  }
+}
+
+.dropdown {
+  color: black;
+  background-color: inherit;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+  font-family: oswald;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 120px;
+  padding: 10px 15px;
+  /* box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.7); */
+  z-index: 1;
+  outline: none;
+}
+
+.dropdown-content .fixed {
+  opacity: 0.9;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 0 0;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  height: 4em;
+}
+
+.dropTeam {
+  border-bottom: 1px solid black;
+  margin-top: 15px;
+}
+
+.dropdown:hover {
+  background-color: white;
+  color: red;
+  cursor: pointer;
+}
+
+.dropdown-content a:hover {
+  color: black;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.fa  {
+padding-left: 4px;
 }
 

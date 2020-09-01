@@ -8,7 +8,7 @@ import story from "./images/story.jpg";
 
 function Story() {
   return (
-    <div>
+    <div id="Story">
       <header>
         <div className="container">
           <div className="row">
@@ -28,18 +28,27 @@ function Story() {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/team">Meet the Team</Link>
+                  <div class="dropdown">
+                    About Us
+                    <i class="fa fa-caret-down"></i>
+                    <div class="dropdown-content">
+                      <Link to="/team" className="dropTeam">
+                        Meet the Team
+                      </Link>
+                      <Link to="/story">Our Story</Link>
+                    </div>
+                  </div>
                 </li>
                 <li>
                   <a href="#footer">Contact</a>
                 </li>
                 <li>
-                  <a href="/location">Location</a>
+                  <Link to="/location">Location</Link>
                 </li>
                 <li>
-                  <a className="orderNow" href="/order">
+                  <Link className="orderNow" to="/order">
                     Order Now
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -100,7 +109,7 @@ function Story() {
           <div class="row">
             <div class="logo">Mario's Pizza</div>
             <div class="info">
-              <p>Location: 555 N. Bernard St. Houston, T.X 77701</p>
+              <p>Location: 2100 E NASA Pkwy, Seabrook, TX 77586</p>
               <p>Open: Monday-Saturday (11:00am-10:00pm)</p>
               <p>Contact: (888)777-4444</p>
             </div>

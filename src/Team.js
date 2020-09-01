@@ -29,7 +29,16 @@ function About() {
                   </a>
                 </li>
                 <li>
-                  <Link to="/team">Meet The Team</Link>
+                  <div class="dropdown">
+                    About Us
+                    <i class="fa fa-caret-down"></i>
+                    <div class="dropdown-content">
+                      <Link to="/team" className="dropTeam">
+                        Meet the Team
+                      </Link>
+                      <Link to="/story">Our Story</Link>
+                    </div>
+                  </div>
                 </li>
                 <li>
                   <a href="#footer">Contact</a>
@@ -211,7 +220,7 @@ function About() {
           <div class="row">
             <div class="logo">Mario's Pizza</div>
             <div class="info">
-              <p>Location: 555 N. Bernard St. Houston, T.X 77701</p>
+              <p>Location: 2100 E NASA Pkwy, Seabrook, TX 77586</p>
               <p>Open: Monday-Saturday (11:00am-10:00pm)</p>
               <p>Contact: (888)777-4444</p>
             </div>
