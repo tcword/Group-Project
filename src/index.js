@@ -8,16 +8,16 @@ import {
   Redirect,
 } from "react-router-dom";
 import "./index.css";
-import Home from "./Home";
-import Order from "./Order";
-import Team from './Team';
-import Story from './Story';
-import Location from './Location'
-import GoogleMap from './Location';
-import State from "./State";
-import navScroll from "./navScroll";
-import * as serviceWorker from "./serviceWorker";
-import ScrollToTop from "./ScrollToTop";
+import Home from "./routes/Home";
+import Order from "./routes/Order";
+import Team from './routes/Team';
+import Story from './routes/Story';
+import Location from './routes/Location'
+import GoogleMap from './routes/Location';
+import State from "./components/State";
+import navScroll from "./components/navScroll";
+import * as serviceWorker from "./other/serviceWorker";
+import ScrollToTop from "./components/ScrollToTop";
 
 ReactDOM.render(
   <Router>

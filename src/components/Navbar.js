@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import { Link } from "react-router-dom";
-import "./App.css";
-import logo3 from "./images/logo3.png";
+import "../App.css";
+import logo3 from "../images/logo3.png";
 
 export default class Navbar extends Component {
   state = {

@@ -1,11 +1,11 @@
 import React from "react";
-import "./App.css";
-import Navbar from './Navbar';
-import Footer from './Footer';
-import profile from './images/profile.JPG';
-import Derik from './images/Derik.jpg';
-import Zach from './images/Zach.png';
-import Brendan from './images/Brendan.jpg';
+import "../App.css";
+import Navbar from '../components/Navbar';
+import Footer from "../components/Footer";
+import profile from '../images/profile.JPG';
+import Derik from '../images/Derik.jpg';
+import Zach from '../images/Zach.png';
+import Brendan from '../images/Brendan.jpg';
 
 function About() {
   return (

@@ -1,9 +1,9 @@
 import React from "react";
-import "./App.css";
-import Navbar from './Navbar';
-import Footer from './Footer';
-import building from "./images/building.jpg";
-import story from "./images/story.jpg";
+import "../App.css";
+import Navbar from '../components/Navbar';
+import Footer from "../components/Footer";
+import building from "../images/building.jpg";
+import story from "../images/story.jpg";
 
 
 function Story() {

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import "./App.css";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import "../App.css";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react";
 
