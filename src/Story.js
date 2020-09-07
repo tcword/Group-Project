@@ -1,7 +1,5 @@
 import React from "react";
 import "./App.css";
-import Navbar from './Navbar';
-import Footer from './Footer';
 import building from "./images/building.jpg";
 import story from "./images/story.jpg";
 
@@ -9,7 +7,6 @@ import story from "./images/story.jpg";
 function Story() {
   return (
     <div id="Story">
-     <Navbar />
       <div className="story" id="home">
         <div className="container">
           <div className="row full-screen">
@@ -58,7 +55,6 @@ function Story() {
           </div>
         </div>
       </section>
-      <Footer />
     </div>
   );
 }

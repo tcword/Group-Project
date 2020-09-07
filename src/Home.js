@@ -1,13 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./App.css";
-import Navbar from './Navbar';
-import Footer from './Footer';
 
 function Home() {
   return (
     <div>
-      <Navbar/>
       <div className="home" id="home">
         <div className="container">
           <div className="row full-screen">
@@ -94,7 +91,6 @@ function Home() {
       <div className="parallax-container">
         <div className="parallax3"></div>
       </div>
-     <Footer />
     </div>
   );
 }

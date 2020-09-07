@@ -1,12 +1,9 @@
 import React from "react";
-import Footer from "./Footer";
 import "./App.css";
-import Navbar from "./Navbar";
 
 function Order(){
     return (
       <div>
-        <Navbar />
         <div className="home2" id="home">
           <div className="container">
             <div className="row full-screen">
@@ -27,7 +24,6 @@ function Order(){
             </div>
           </div>
         </section>
-        <Footer />
       </div>
     ); 
 }

@@ -25,6 +25,12 @@ function Footer() {
               <i class="fa fa-twitter"></i>
             </a>
           </div>
+          <div className="copyright">
+            <p>
+              <span dangerouslySetInnerHTML={{ __html: "&copy;" }} />
+              2020 Tech-Warriors Group Project. No rights reserved.
+            </p>
+          </div>
         </div>
       </div>
     </footer>

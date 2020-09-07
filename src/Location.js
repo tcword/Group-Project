@@ -1,15 +1,11 @@
 import React, { Component } from "react";
 import "./App.css";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react";
 
-class GoogleMap extends Component {
+class Location extends Component {
   render() {
     return (
       <div>
-        <Navbar />
         <div className="location" id="location">
           <div className="container">
             <div className="row full-screen">
@@ -57,13 +53,12 @@ class GoogleMap extends Component {
             </div>
           </div>
         </section>
-        <Footer />
       </div>
     );
   }
 }
 
-export default GoogleMap;
+export default Location;
 // export default GoogleApiWrapper({
 //   apiKey: "AIzaSyAFD0kzMREDRKtnV2Fdi_GTQpXHfH83GxQ",
 // })(GoogleMap);

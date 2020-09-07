@@ -1,7 +1,5 @@
 import React from "react";
 import "./App.css";
-import Navbar from './Navbar';
-import Footer from './Footer';
 import profile from './images/profile.JPG';
 import Derik from './images/Derik.jpg';
 import Zach from './images/Zach.png';
@@ -10,7 +8,6 @@ import Brendan from './images/Brendan.jpg';
 function About() {
   return (
     <div>
-      <Navbar />
       <div className="about" id="about">
         <div className="container">
           <div className="row full-screen">
@@ -170,7 +167,6 @@ function About() {
           </div>
         </div>
       </section>
-      <Footer />
     </div>
   );
 }
