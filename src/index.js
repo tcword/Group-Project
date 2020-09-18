@@ -19,6 +19,7 @@ import State from "./State";
 import navScroll from "./navScroll";
 import * as serviceWorker from "./serviceWorker";
 import ScrollToTop from "./ScrollToTop";
+import Login from "./Login";
 
 ReactDOM.render(
   <Router>
@@ -27,6 +28,7 @@ ReactDOM.render(
     <Switch>
       <Route exact path="/" component={Home} />
       <Route exact path="/order" component={Order} />
+      <Route exact path='/login' component={Login} />
       <Route exact path="/team" component={Team} />
       <Route exact path="/story" component={Story} />
       <Route exact path="/location" component={Location} />

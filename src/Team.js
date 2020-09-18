@@ -1,6 +1,5 @@
 import React from "react";
 import "./App.css";
-import profile from './images/profile.JPG';
 import Derik from './images/Derik.jpg';
 import Zach from './images/Zach.png';
 import Brendan from './images/Brendan.jpg';
@@ -30,7 +29,7 @@ function About() {
             <div className="about-content">
               <div className="row">
                 <div className="img">
-                  <img src={profile} />
+                  <img src="https://ca.slack-edge.com/T9P33872P-UT3PHC3L2-43d458905ce0-512" />
                 </div>
                 <div className="text">
                   <p>

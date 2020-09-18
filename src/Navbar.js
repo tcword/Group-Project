@@ -47,13 +47,13 @@ export default class Navbar extends Component {
                     </div>
                   </li>
                   <li>
-                    <Link href="#footer">Contact</Link>
+                    <a href="#footer">Contact</a>
                   </li>
                   <li>
                     <Link to="/location">Location</Link>
                   </li>
                   <li>
-                    <Link className="orderNow" to="/order">
+                    <Link className="orderNow" to="/login">
                       Order Now
                     </Link>
                   </li>

@@ -13,7 +13,7 @@ function Home() {
                 <h1>Welcome to Mario's Pizza</h1>
                 <p>REAL ITALIAN PIZZA WITH REAL INGREDIENTS</p>
                 <div class="cv-btn">
-                  <Link to="/order">Build Your Pizza</Link>
+                  <Link to="/login">Build Your Pizza</Link>
                 </div>
               </div>
             </div>

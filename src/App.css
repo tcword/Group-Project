@@ -366,7 +366,7 @@ header .navbar ul li .orderNow:hover {
 .about-me {
   height: 30em;
   padding: 80px 15px;
-  background: url("https://blog.hdwallsource.com/wp-content/uploads/2014/10/white-wallpaper-16876-17429-hd-wallpapers.jpg");
+  background: url("https://cdn.modpizza.com/wp-content/themes/modpizza/dist/images/MOD_new_bg.png");
 }
 
 .text-uppercase {
@@ -552,73 +552,7 @@ footer .copyright {
   padding-bottom: 20px;
 }
 
-/* Order Page */
 
-.nav {
-  margin: 0 auto;
-  max-width: 100%;
-  padding-left: 170px;
-  padding-right: 170px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-
-  border-bottom: 1px solid black;
-}
-
-.nav ul {
-  margin: 0 auto;
-  padding: 0;
-  list-style: none;
-  text-align: right;
-}
-
-.nav ul li {
-  float: none;
-  display: inline-block;
-}
-
-.nav ul li:nth-child(1) {
-  float: left;
-}
-
-.nav ul li:nth-child(2) {
-  float: left;
-}
-
-.nav ul li a {
-  color: black;
-  font-size: 20px;
-  text-transform: uppercase;
-  text-decoration: none;
-  display: block;
-  padding: 10px 20px;
-}
-
-.order {
-  width: 100%;
-  position: relative;
-}
-
-.logo_area {
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  left: 50%;
-  top: 0;
-  content: "";
-  margin-left: -150px;
-  text-align: center;
-  background-color: yellow;
-}
-
-.logo_area img {
-  width: 9em;
-  padding-top: 10px;
-}
-
-.body_order {
-  background: url("");
-}
 
 /* Team */
 
@@ -626,7 +560,9 @@ footer .copyright {
   background-color: gray;
 }
 
-.home2 {
+/* Build Your Pizza */
+
+.build_page {
   min-height: 100vh;
   background-image: url("https://cdn9.dissolve.com/p/D2115_189_697/D2115_189_697_1200.jpg");
   background-size: cover;
@@ -634,11 +570,11 @@ footer .copyright {
   padding-top: 15px;
 }
 
-.home2 .full-screen {
+.build_page .full-screen {
   min-height: 100vh;
 }
 
-.home2 .home-content {
+.build_page .home-content {
   flex: 0 0 100%;
   max-width: 100%;
   display: flex;
@@ -646,7 +582,7 @@ footer .copyright {
   align-items: center;
 }
 
-.home2 .home-content .block {
+.build_page .home-content .block {
   flex: 0 0 100%;
   margin-top: 20px;
   width: 50%;
@@ -654,7 +590,7 @@ footer .copyright {
   height: 15rem;
 }
 
-.home2 .home-content .block h1 {
+.build_page .home-content .block h1 {
   font-family: Anodyne;
   color: white;
   text-transform: uppercase;
@@ -662,6 +598,21 @@ footer .copyright {
   font-weight: 300;
   padding-top: 30px;
 }
+
+/* .build {
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+      max-height: 400px; 
+     min-width: 100px;  
+    background-image: url('https://cdn.modpizza.com/wp-content/themes/modpizza/dist/images/MOD_new_bg.png');
+    margin: 10px;
+    padding: 20px;
+    width: 100%;
+    z-index: 1;
+} */
+
 
 /* Meet the Team Page */
 
@@ -695,6 +646,8 @@ footer .copyright {
 
 .about .home-content .block h1 {
   font-family: Anodyne;
+  color: black;
+  text-shadow: 2px 1px white;
   text-transform: uppercase;
   font-size: 9em;
   font-weight: 300;
@@ -812,7 +765,7 @@ footer .copyright {
 }
 
 .about-me4 {
-  background-color: white;
+  background-image: url('https://cdn.modpizza.com/wp-content/themes/modpizza/dist/images/MOD_new_bg.png');
   height: auto;
    padding: 40px 45px;
 }
@@ -948,6 +901,10 @@ footer .copyright {
   text-shadow: 2px 1px black;
 }
 
+.about-me2 {
+  background-image: url('https://cdn.modpizza.com/wp-content/themes/modpizza/dist/images/MOD_new_bg.png');
+}
+
 .about-me2 .about-content .imgBuilding {
   flex: 0 0 33.33%;
   max-width: 33.33%;
@@ -1003,7 +960,7 @@ footer .copyright {
 .locations {
   height: auto;
   padding: 80px 5px;
-  background-color: white;
+ background-image: url('https://cdn.modpizza.com/wp-content/themes/modpizza/dist/images/MOD_new_bg.png');
 }
 
 .locations .section-title {
@@ -1032,6 +989,94 @@ footer .copyright {
   text-align: center;
 }
 
+/* Login */
+
+.login {
+  background: url('https://cdn.modpizza.com/wp-content/themes/modpizza/dist/images/MOD_new_bg.png') repeat;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 150px;
+}
+
+.login_container {
+  background-color: white;
+  width: 300px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid lightgray;
+}
+
+.login_container > h1 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.login_container > form > h5 {
+  margin-bottom: 5px;
+  margin-top: 8px;
+  margin-left: 10px;
+}
+
+.signIn_input {
+  display: flex;
+    align-items: center;
+    border: 1px solid gray;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 999px;
+    width: auto;
+}
+
+.signIn_input > input {
+  /* height: 30px;
+  margin-bottom: 10px;
+  background-color: white;
+  width: 98%; */
+   border: none;
+    background-color: transparent;
+    outline-width: 0;
+    color: black;
+}
+
+.login_container > p {
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+.login_signInButton {
+  background: red;
+  border-radius: 50px;
+  width: 100%;
+  height: 30px;
+  margin-top: 20px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.login_registerButton {
+    border-radius: 50px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: darkgray;
+    cursor: pointer;
+}
+
+.login_logo {
+  font-family: Anodyne;
+  font-size: 60px;
+  color: red;
+  text-shadow: 1px 1px black;
+  object-fit: contain;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
 
 /* Responsive  */
@@ -1803,6 +1848,22 @@ footer .copyright {
   text-align: left;
   padding-left: 20px;
 }
+
+.login {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.login_logo {
+  font-family: Anodyne;
+  font-size: 35px;
+  color: red;
+  text-shadow: 1px 1px black;
+  object-fit: contain;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 }
 
 
@@ -1837,7 +1898,7 @@ footer .copyright {
     top: 0;
     right: 0;
     bottom: 0;
-    z-index: 1;
+    z-index: 100;
   }
 
   .navbar {
@@ -1892,7 +1953,7 @@ footer .copyright {
   }
 
   .dropdown-content .fixed {
-    opacity: 0.9;
+    /* opacity: 0.9; */
   }
 
   .dropdown-content a {
@@ -2410,7 +2471,7 @@ footer .copyright {
 /* Location Page */
 
 .location {
-  min-height: 35em;
+  height: 25em;
   background-image: url("https://cdn.vox-cdn.com/thumbor/_xrAvUdF9XuPHMrhziq3kjXFuXI=/425x105:1891x1205/1200x675/filters:focal(425x105:1891x1205)/cdn.vox-cdn.com/uploads/chorus_image/image/48926127/2015-11-18-otium-012.0.0.jpg");
   background-size: 80em 100em;
   background-position: center;
@@ -2443,7 +2504,7 @@ footer .copyright {
   text-transform: uppercase;
   font-size: 5em;
   font-weight: 300;
-  padding-top: 80px;
+  padding-top: 5px;
 }
 
 .locations {
@@ -2516,6 +2577,23 @@ footer .copyright {
   padding-top: 30px;
   position: relative;
   display: inline-block;
+}
+
+/* Login */
+
+.login {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.login_logo {
+  font-family: Anodyne;
+  font-size: 25px;
+  color: red;
+  text-shadow: 1px 1px black;
+  object-fit: contain;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* Footer */
