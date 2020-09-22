@@ -30,15 +30,15 @@ export default class Navbar extends Component {
                   }
                 >
                   <li>
-                    <Link to="/" class="active">
+                    <Link to="/" className="active">
                       Home
                     </Link>
                   </li>
                   <li>
                     <div className="dropdown">
                       About Us
-                      <i class="fa fa-caret-down"></i>
-                      <div class="dropdown-content">
+                      <i className="fa fa-caret-down"></i>
+                      <div className="dropdown-content">
                         <Link to="/team" className="dropTeam">
                           Meet the Team
                         </Link>
