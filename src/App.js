@@ -22,6 +22,7 @@ import ScrollToTop from "./ScrollToTop";
 import Login from "./Login";
 import { useStateValue } from "./StateProvider";
 import { auth } from './firebase';
+import Receipt from "./Receipt";
 
 function App() {
   const [{ user }, dispatch] = useStateValue();
@@ -63,6 +64,7 @@ function App() {
           <Route exact path="/login" component={Login} />
           <Route exact path="/team" component={Team} />
           <Route exact path="/story" component={Story} />
+          <Route exact path='/receipt' component={Receipt} />
           <Route exact path="/location" component={Location} />
           {/* <State/> */}
         </Switch>

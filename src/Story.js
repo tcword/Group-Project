@@ -28,7 +28,7 @@ function Story() {
             <div className="about-content">
               <div className="row">
                 <div className="imgBuilding">
-                  <img src={story} />
+                  <img src={story} alt='' />
                 </div>
                 <div className="text">
                   <p>

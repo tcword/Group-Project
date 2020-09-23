@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./App.css";
 import { Link, useHistory } from "react-router-dom";
 import { auth } from "./firebase";
-import logo3 from "./images/logo3.png";
 
 function Login() {
   const history = useHistory();

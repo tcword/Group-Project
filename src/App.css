@@ -15,7 +15,7 @@ div.shop-details:hover + img {
   display: block;
   max-width: 200px;
   max-height: 200px;
-  
+  transition: all 0.6s ease;
 }
 .shop-item {
   margin-bottom: 0.25rem;
@@ -287,7 +287,6 @@ header .navbar ul li .orderNow:hover {
   /* box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.4); */
   z-index: 0;
   height: auto;
-  
 }
 
 .dropdown-content .fixed {
@@ -611,7 +610,7 @@ footer .social a .fa-facebook:hover {
 }
 
 footer .social a .fa-twitter:hover {
-  color:  #00acee;
+  color: #00acee;
 }
 
 footer .copyright {
@@ -1154,6 +1153,62 @@ footer .copyright {
   object-fit: contain;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+/* Receipt */
+
+.receipt {
+  height: auto;
+  background-image: url("https://cdn.modpizza.com/wp-content/themes/modpizza/dist/images/MOD_new_bg.png");
+}
+
+.receipt h1 {
+  padding-top: 150px;
+  margin-bottom: 15px;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #febd01;
+}
+
+.receipt p {
+  text-align: center;
+}
+
+.order_time {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+.content-section {
+  text-align: center;
+}
+
+.content-section .cv-btn {
+  padding-top: 10px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+}
+
+.content-section .cv-btn a {
+  border-radius: 50px;
+  color: white;
+  background-color: red;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 450;
+  transition: all 0.5s ease;
+}
+
+.content-section .cv-btn a:hover {
+  background-color: darkred;
+  color: white;
+  font-size: 20px;
+  font-weight: 450;
+  transition: all 0.5s ease;
 }
 
 /* Responsive  */
@@ -1739,11 +1794,10 @@ footer .copyright {
     text-shadow: 2px 1px black;
   }
 
-   .about-me2 {
+  .about-me2 {
     padding: 100px 35px;
     height: 75em;
   }
-
 
   .about-me2 .about-content .img {
     flex: 0 0 100%;
@@ -1780,8 +1834,6 @@ footer .copyright {
     background-color: lightgrey;
     height: 75em;
   }
-
-  
 
   .section-title3 {
     position: relative;
@@ -2800,6 +2852,17 @@ footer .copyright {
     padding-bottom: 10px;
   }
 
+  /* Receipt */
+
+  .receipt {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .receipt p {
+    font-size: smaller;
+  }
+
   /* Footer */
 
   footer {
@@ -2862,7 +2925,7 @@ footer .copyright {
 
 /* Product */
 
-.product {
+/* .product {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -2937,4 +3000,4 @@ footer .copyright {
   z-index: 1;
   margin-left: 5px;
   margin-right: 5px;
-}
+} */

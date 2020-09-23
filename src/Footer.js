@@ -12,7 +12,7 @@ function Footer() {
           <div className="info">
             <p>Location: 2100 E NASA Pkwy, Seabrook, TX 77586</p>
             <p>Open: Monday-Saturday (11:00am-10:00pm)</p>
-            <p>Contact: (888)777-4444</p>
+            <p>Contact: (888) 777-4444</p>
           </div>
           <div className="social">
             <a href="/" target="_blank">
