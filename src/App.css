@@ -131,11 +131,11 @@ html {
 
 header {
   background-color: white;
+  /* background-image: url("https://cdn.modpizza.com/wp-content/themes/modpizza/dist/images/MOD_new_bg.png"); */
   height: 80px;
   position: absolute;
   left: 0px;
   right: 0px;
-  /* border-bottom: 1px solid black; */
   box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.5);
   padding: 0px 15px;
   z-index: 11;
@@ -145,8 +145,7 @@ header.fixed {
   background-color: #ffffff;
   opacity: 0.9;
   position: fixed;
-  /* border-bottom: 1px solid gray; */
-  animation: fixHeader 0.5s ease;
+  animation: fixHeader 0.3s ease;
   z-index: 11;
   height: 80px;
 }
@@ -164,7 +163,6 @@ header.fixed {
   font-size: 30px;
   height: 30px;
   width: 35px;
-  background-color: #ffffff;
   color: #000000;
   border-radius: 3px;
   line-height: 27px;
@@ -247,7 +245,7 @@ header.fixed .navbar ul li .orderNow:hover {
 
 header .navbar ul li a:hover {
   color: red;
-  transition: all 0.3s ease;
+  transition: all 0.6s ease;
 }
 
 header .navbar ul li .orderNow:hover {
@@ -284,7 +282,7 @@ header .navbar ul li .orderNow:hover {
   background-color: white;
   width: auto;
   padding: 0px 15px;
-  /* box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.4); */
+  border-radius: 5px;
   z-index: 0;
   height: auto;
 }
@@ -308,7 +306,6 @@ header .navbar ul li .orderNow:hover {
 }
 
 .dropdown:hover {
-  background-color: white;
   color: red;
   cursor: pointer;
 }
@@ -333,7 +330,6 @@ header .navbar ul li .orderNow:hover {
 
 .home {
   min-height: 100vh;
-  /* background-image:  url("https://fullyloaded.pizza/wp-content/uploads/2016/08/pizza-background.jpg"); */
   background-image: url("https://cdn.modpizza.com/wp-content/uploads/2020/03/MOD_Messaging_Website_v4.jpg");
   background-size: cover;
   background-position: center;
@@ -394,11 +390,12 @@ header .navbar ul li .orderNow:hover {
 }
 
 .home .home-content .block .cv-btn a:hover {
-  background-color: darkred;
-  color: white;
+  background-color: white;
+  color: red;
+  box-shadow: 0 0 5px 0 red inset, 0 0 10px 4px red;
   font-size: 25px;
   font-weight: 450;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 .about-me .cv-btn {
@@ -420,11 +417,12 @@ header .navbar ul li .orderNow:hover {
 }
 
 .about-me .container .cv-btn a:hover {
-  background-color: darkred;
-  color: white;
+  background-color: white;
+  box-shadow: 0 0 5px 0 red inset, 0 0 10px 4px red;
+  color: red;
   font-size: 20px;
   font-weight: 450;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 /* About Me */
@@ -638,7 +636,7 @@ footer .copyright {
 /* Build Your Pizza */
 
 .build_page {
-  min-height: 100vh;
+  height: 35em;
   background-image: url("https://cdn9.dissolve.com/p/D2115_189_697/D2115_189_697_1200.jpg");
   background-size: cover;
   background-position: center;
@@ -646,7 +644,7 @@ footer .copyright {
 }
 
 .build_page .full-screen {
-  min-height: 100vh;
+  min-height: 35em;
 }
 
 .build_page .home-content {
@@ -659,10 +657,10 @@ footer .copyright {
 
 .build_page .home-content .block {
   flex: 0 0 100%;
-  margin-top: 20px;
+  margin-top: 180px;
   width: 50%;
   text-align: center;
-  height: 15rem;
+  height: 35rem;
 }
 
 .build_page .home-content .block h1 {
@@ -691,7 +689,7 @@ footer .copyright {
 /* Meet the Team Page */
 
 .about {
-  min-height: 100vh;
+  min-height: auto;
   background-image: url("https://subwallpaper.com/Widescreen-Wallpapers/pizza-wallpaper-phone-For-Widescreen-Wallpaper.jpg");
   background-size: cover;
   background-position: center;
@@ -699,7 +697,7 @@ footer .copyright {
 }
 
 .about .full-screen {
-  min-height: 100vh;
+  min-height: 35em;
 }
 
 .about .home-content {
@@ -730,7 +728,6 @@ footer .copyright {
 
 .about-me2 {
   padding: 40px 45px;
-  background-color: #ffffff;
   height: auto;
 }
 
@@ -802,7 +799,7 @@ footer .copyright {
 }
 
 .about-me3 {
-  background-color: lightgray;
+  background-color: #e8e8e8;
   height: auto;
   padding: 40px 45px;
 }
@@ -884,7 +881,7 @@ footer .copyright {
 }
 
 .about-me5 {
-  background-color: lightgray;
+  background-color: #e8e8e8;
   height: auto;
   padding: 40px 45px;
 }
@@ -931,7 +928,7 @@ footer .copyright {
 /* Our Story Page */
 
 .story {
-  min-height: 100vh;
+  height: 35em;
   background-image: url("https://preservetucson.org/wp-content/uploads/2018/01/THPF-Web-Art-Gallery-Marios-Pizza-Sign-01.jpg");
   background-size: cover;
   background-position: center;
@@ -939,7 +936,6 @@ footer .copyright {
 }
 
 .story .container {
-  /* background: rgba(0, 0, 0, 0.5); */
   width: 100%;
 }
 
@@ -960,7 +956,7 @@ footer .copyright {
   margin-top: 0px;
   width: 50%;
   text-align: center;
-  height: 15rem;
+  height: 45%;
 }
 
 .story .home-content .block h1 {
@@ -970,7 +966,7 @@ footer .copyright {
   font-size: 12em;
   letter-spacing: 6px;
   font-weight: 100;
-  padding-top: 18px;
+  padding-top: 10px;
   box-shadow: 0 0 1.6rem rgba(0, 0, 0, 1);
   text-shadow: 2px 1px black;
 }
@@ -1170,6 +1166,10 @@ footer .copyright {
   text-decoration-color: #febd01;
 }
 
+.order_time h4 {
+  font-weight: 550;
+}
+
 .receipt p {
   text-align: center;
 }
@@ -1288,7 +1288,7 @@ footer .copyright {
   }
 
   .about-me3 {
-    background-color: lightgray;
+    background-color: #e8e8e8;
     height: auto;
     padding: 40px 45px;
   }
@@ -1370,7 +1370,7 @@ footer .copyright {
   }
 
   .about-me5 {
-    background-color: lightgray;
+    background-color: #e8e8e8;
     height: auto;
     padding: 40px 45px;
   }
@@ -1413,6 +1413,50 @@ footer .copyright {
     padding-left: 20px;
     padding-bottom: 40px;
   }
+
+  .story {
+    height: 35em;
+    background-image: url("https://preservetucson.org/wp-content/uploads/2018/01/THPF-Web-Art-Gallery-Marios-Pizza-Sign-01.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-top: 15px;
+  }
+
+  .story .container {
+    width: 100%;
+  }
+
+  .story .full-screen {
+    min-height: 100vh;
+  }
+
+  .story .home-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .story .home-content .block {
+    flex: 0 0 100%;
+    margin-top: 0px;
+    width: 50%;
+    text-align: center;
+    height: 70%;
+  }
+
+  .story .home-content .block h1 {
+    font-family: Anodyne;
+    color: white;
+    text-transform: uppercase;
+    font-size: 10em;
+    letter-spacing: 6px;
+    font-weight: 100;
+    padding-top: 10px;
+    box-shadow: 0 0 1.6rem rgba(0, 0, 0, 1);
+    text-shadow: 2px 1px black;
+  }
 }
 
 @media (max-width: 991px) {
@@ -1421,6 +1465,62 @@ footer .copyright {
   }
   .home .home-content .block p {
     font-size: 15px;
+  }
+
+  .story {
+    min-height: auto;
+    background-image: url("https://preservetucson.org/wp-content/uploads/2018/01/THPF-Web-Art-Gallery-Marios-Pizza-Sign-01.jpg");
+    background-size: 80em 60em;
+    background-position: left;
+    padding-top: 15px;
+  }
+
+  .story .container {
+    width: 100%;
+  }
+
+  .story .full-screen {
+    height: auto;
+  }
+
+  .story .home-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .story .home-content .block {
+    flex: 0 0 100%;
+    margin-top: 0px;
+    width: 50%;
+    text-align: center;
+    height: 35em;
+  }
+
+  .story .home-content .block h1 {
+    font-family: Anodyne;
+    color: white;
+    text-transform: uppercase;
+    font-size: 6em;
+    letter-spacing: 4px;
+    font-weight: 100;
+    padding-top: 18px;
+    box-shadow: 0 0 1.6rem rgba(0, 0, 0, 1);
+    text-shadow: 2px 1px black;
+  }
+
+  .build_page .home-content .block {
+    flex: 0 0 100%;
+    margin-top: 180px;
+    width: 50%;
+    text-align: center;
+  }
+
+  .build_page .home-content .block h1 {
+    font-size: 5.5em;
+    margin-top: 15px;
   }
 }
 
@@ -1751,7 +1851,7 @@ footer .copyright {
   }
 
   .story {
-    min-height: 100vh;
+    min-height: 80vh;
     background-image: url("https://preservetucson.org/wp-content/uploads/2018/01/THPF-Web-Art-Gallery-Marios-Pizza-Sign-01.jpg");
     background-size: 80em 60em;
     background-position: left;
@@ -1763,7 +1863,7 @@ footer .copyright {
   }
 
   .story .full-screen {
-    min-height: 100vh;
+    height: 80vh;
   }
 
   .story .home-content {
@@ -1792,6 +1892,19 @@ footer .copyright {
     padding-top: 18px;
     box-shadow: 0 0 1.6rem rgba(0, 0, 0, 1);
     text-shadow: 2px 1px black;
+  }
+
+  .about-me2 .about-content .imgBuilding {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .about-me2 .about-content .imgBuilding img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.9);
+    height: auto;
   }
 
   .about-me2 {
@@ -1831,7 +1944,7 @@ footer .copyright {
   }
   .about-me3 {
     padding: 100px 35px;
-    background-color: lightgrey;
+    background-color: #e8e8e8;
     height: 75em;
   }
 
@@ -1972,7 +2085,7 @@ footer .copyright {
 
   .about-me5 {
     padding: 100px 35px;
-    background-color: lightgray;
+    background-color: #e8e8e8;
     height: 80em;
   }
 
@@ -2081,7 +2194,7 @@ footer .copyright {
   header {
     padding: 20px;
     position: fixed;
-    background-color: #ffffff;
+    background-color: white;
     border: none;
   }
 
@@ -2134,17 +2247,17 @@ footer .copyright {
   .navbar.show {
     display: block;
   }
+
   header .navbar ul li {
     display: block;
     margin-left: 0;
   }
+
   header .navbar ul li a {
     line-height: 42px;
     color: #000000;
   }
-  header .navbar ul li a::before {
-    background-color: #febd01;
-  }
+
   .dropdown {
     color: black;
     background-color: inherit;
@@ -2155,6 +2268,7 @@ footer .copyright {
     text-transform: uppercase;
     letter-spacing: 1.5px;
     font-weight: 500;
+    margin-left: 15px;
   }
 
   .dropdown-content {
@@ -2162,13 +2276,10 @@ footer .copyright {
     background-color: white;
     min-width: 120px;
     padding: 10px 15px;
+    padding-left: 30px;
     box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     outline: none;
-  }
-
-  .dropdown-content .fixed {
-    /* opacity: 0.9; */
   }
 
   .dropdown-content a {
@@ -2183,6 +2294,7 @@ footer .copyright {
   .dropTeam {
     border-bottom: 0px solid black;
     margin-top: 0px;
+    border: none;
   }
 
   .dropdown:hover {
@@ -2194,7 +2306,7 @@ footer .copyright {
 
   .dropdown-content a:hover {
     color: black;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
     cursor: pointer;
   }
 
@@ -2334,12 +2446,11 @@ footer .copyright {
     color: black;
     font-size: 4.5em;
     font-weight: 400;
-    padding-top: 90px;
+    padding-top: 40px;
   }
 
   .about-me2 {
     padding: 100px 35px;
-    background-color: #ffffff;
     height: auto;
   }
 
@@ -2352,6 +2463,7 @@ footer .copyright {
 
   .section-title2 h1 {
     position: absolute;
+    display: inline-block;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -2403,9 +2515,9 @@ footer .copyright {
     line-height: 24px;
     color: black;
     margin: 0 0 12px;
-    text-align: left;
-    padding-left: 20px;
-    padding-top: 30px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .about-me3 {
     padding: 100px 35px;
@@ -2474,8 +2586,9 @@ footer .copyright {
     line-height: 24px;
     color: black;
     margin: 0 0 12px;
-    text-align: left;
-    padding-left: 20px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .about-me4 {
@@ -2545,8 +2658,9 @@ footer .copyright {
     line-height: 24px;
     color: black;
     margin: 0 0 12px;
-    text-align: left;
-    padding-left: 20px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .about-me5 {
@@ -2616,26 +2730,23 @@ footer .copyright {
     line-height: 24px;
     color: black;
     margin: 0 0 12px;
-    text-align: left;
-    padding-left: 20px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   /* Our Story Page */
 
   .story {
-    min-height: 100vh;
+    min-height: auto;
     background-image: url("https://preservetucson.org/wp-content/uploads/2018/01/THPF-Web-Art-Gallery-Marios-Pizza-Sign-01.jpg");
-    background-size: 80em 60em;
+    background-size: cover;
     background-position: left;
-    padding-top: 15px;
-  }
-
-  .story .container {
-    width: 100%;
+    position: relative;
   }
 
   .story .full-screen {
-    min-height: 100vh;
+    min-height: 80vh;
   }
 
   .story .home-content {
@@ -2649,9 +2760,10 @@ footer .copyright {
   .story .home-content .block {
     flex: 0 0 100%;
     margin-top: 0px;
-    width: 50%;
     text-align: center;
-    height: 7rem;
+    display: inline-block;
+    vertical-align: middle;
+    height: auto;
   }
 
   .story .home-content .block h1 {
@@ -2661,7 +2773,6 @@ footer .copyright {
     font-size: 4em;
     letter-spacing: 4px;
     font-weight: 100;
-    padding-top: 18px;
     box-shadow: 0 0 1.6rem rgba(0, 0, 0, 1);
     text-shadow: 2px 1px black;
   }
@@ -2674,7 +2785,7 @@ footer .copyright {
   .about-me2 .about-content .imgBuilding img {
     width: 100%;
     display: block;
-    border-radius: 0px 30% 0px;
+    border-radius: 10px;
     box-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.9);
     height: auto;
   }
@@ -2808,7 +2919,7 @@ footer .copyright {
   /* Build Page */
 
   .build_page {
-    height: auto;
+    min-height: auto;
     width: auto;
     background-image: url("https://cdn9.dissolve.com/p/D2115_189_697/D2115_189_697_1200.jpg");
     background-size: cover;
@@ -2819,7 +2930,7 @@ footer .copyright {
   }
 
   .build_page .full-screen {
-    min-height: 100vh;
+    min-height: 80vh;
   }
 
   .build_page .home-content {
@@ -2835,16 +2946,16 @@ footer .copyright {
     margin-top: 20px;
     width: 50%;
     text-align: center;
-    height: 15rem;
+    height: auto;
   }
 
   .build_page .home-content .block h1 {
     font-family: Anodyne;
     color: white;
     text-transform: uppercase;
-    font-size: 6.5em;
+    font-size: 4em;
     font-weight: 300;
-    padding-top: 30px;
+    padding-top: 0px;
   }
 
   .build .section-title h1 {
